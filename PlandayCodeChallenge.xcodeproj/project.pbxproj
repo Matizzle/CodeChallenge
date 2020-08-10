@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33C0290EEA370556B5EC0934 /* Pods_PlandayCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D33CCA078E0DA1C93A63FC7 /* Pods_PlandayCodeChallenge.framework */; };
+		E349DD8124DD3B7B00859714 /* ListEmployeesResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349DD8024DD3B7B00859714 /* ListEmployeesResponseBody.swift */; };
+		E349DD8324DD469B00859714 /* EmployeeDetailsResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349DD8224DD469B00859714 /* EmployeeDetailsResponseBody.swift */; };
+		E349DD8E24DEB79300859714 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E349DD8D24DEB79300859714 /* Default-568h@2x.png */; };
+		E349DD9524E13EE500859714 /* AlertTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349DD9424E13EE400859714 /* AlertTexts.swift */; };
+		E349DD9724E13F7300859714 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349DD9624E13F7300859714 /* Alert.swift */; };
+		E371D96024D83F150075CCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E371D95F24D83F150075CCFD /* AppDelegate.swift */; };
+		E371D96224D83F150075CCFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E371D96124D83F150075CCFD /* SceneDelegate.swift */; };
+		E371D96924D83F200075CCFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E371D96824D83F200075CCFD /* Assets.xcassets */; };
+		E371D96C24D83F200075CCFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E371D96A24D83F200075CCFD /* LaunchScreen.storyboard */; };
+		E371D97724D83F210075CCFD /* PlandayCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E371D97624D83F210075CCFD /* PlandayCodeChallengeTests.swift */; };
+		E3BD363424DC7CED00A97E20 /* UpdateEmployeeRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BD363324DC7CED00A97E20 /* UpdateEmployeeRequestBody.swift */; };
+		E3D7827524D95E250038D8C4 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7827424D95E250038D8C4 /* EmployeeListViewController.swift */; };
+		E3D7827F24D98E630038D8C4 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7827E24D98E630038D8C4 /* EmployeeCell.swift */; };
+		E3D7828124D98F6A0038D8C4 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7828024D98F6A0038D8C4 /* Employee.swift */; };
+		E3D7828924D9FE4B0038D8C4 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7828824D9FE4B0038D8C4 /* EmployeeViewModel.swift */; };
+		E3D7829124DA96C70038D8C4 /* PlandayAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7829024DA96C70038D8C4 /* PlandayAPIClient.swift */; };
+		E3D7829924DAE96A0038D8C4 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D7829824DAE96A0038D8C4 /* AccessToken.swift */; };
+		EAF627AF7D3BF1D356C960E3 /* Pods_PlandayCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1056564E36B80F30C68E81A9 /* Pods_PlandayCodeChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E371D97324D83F210075CCFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E371D95424D83F150075CCFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E371D95B24D83F150075CCFD;
+			remoteInfo = PlandayCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1056564E36B80F30C68E81A9 /* Pods_PlandayCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlandayCodeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883401C885879AB81AA918A6 /* Pods-PlandayCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlandayCodeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-PlandayCodeChallengeTests/Pods-PlandayCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D33CCA078E0DA1C93A63FC7 /* Pods_PlandayCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlandayCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7ADA34F6843630060C24FC3 /* Pods-PlandayCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlandayCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-PlandayCodeChallenge/Pods-PlandayCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		AE2AAA3B91663B45DF0D1C02 /* Pods-PlandayCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlandayCodeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-PlandayCodeChallenge/Pods-PlandayCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C34908AEA05EB69057A9AE /* Pods-PlandayCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlandayCodeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-PlandayCodeChallengeTests/Pods-PlandayCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E349DD8024DD3B7B00859714 /* ListEmployeesResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEmployeesResponseBody.swift; sourceTree = "<group>"; };
+		E349DD8224DD469B00859714 /* EmployeeDetailsResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailsResponseBody.swift; sourceTree = "<group>"; };
+		E349DD8D24DEB79300859714 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E349DD9424E13EE400859714 /* AlertTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTexts.swift; sourceTree = "<group>"; };
+		E349DD9624E13F7300859714 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		E371D95C24D83F150075CCFD /* PlandayCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlandayCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E371D95F24D83F150075CCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E371D96124D83F150075CCFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E371D96824D83F200075CCFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E371D96B24D83F200075CCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E371D96D24D83F200075CCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E371D97224D83F210075CCFD /* PlandayCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlandayCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E371D97624D83F210075CCFD /* PlandayCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandayCodeChallengeTests.swift; sourceTree = "<group>"; };
+		E371D97824D83F210075CCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3BD363324DC7CED00A97E20 /* UpdateEmployeeRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmployeeRequestBody.swift; sourceTree = "<group>"; };
+		E3D7827424D95E250038D8C4 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
+		E3D7827E24D98E630038D8C4 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		E3D7828024D98F6A0038D8C4 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		E3D7828824D9FE4B0038D8C4 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		E3D7829024DA96C70038D8C4 /* PlandayAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlandayAPIClient.swift; sourceTree = "<group>"; };
+		E3D7829824DAE96A0038D8C4 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E371D95924D83F150075CCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C0290EEA370556B5EC0934 /* Pods_PlandayCodeChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E371D96F24D83F210075CCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF627AF7D3BF1D356C960E3 /* Pods_PlandayCodeChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FDEA4A6DDD0CA9C32EBE835 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE2AAA3B91663B45DF0D1C02 /* Pods-PlandayCodeChallenge.debug.xcconfig */,
+				A7ADA34F6843630060C24FC3 /* Pods-PlandayCodeChallenge.release.xcconfig */,
+				883401C885879AB81AA918A6 /* Pods-PlandayCodeChallengeTests.debug.xcconfig */,
+				D3C34908AEA05EB69057A9AE /* Pods-PlandayCodeChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3AC60210D27D245C04EAA88D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D33CCA078E0DA1C93A63FC7 /* Pods_PlandayCodeChallenge.framework */,
+				1056564E36B80F30C68E81A9 /* Pods_PlandayCodeChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E349DD8924DE9D8300859714 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7827E24D98E630038D8C4 /* EmployeeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E349DD8A24DEA93D00859714 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E371D96D24D83F200075CCFD /* Info.plist */,
+				E371D96824D83F200075CCFD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E349DDD824E150A300859714 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E349DD9624E13F7300859714 /* Alert.swift */,
+				E349DD9424E13EE400859714 /* AlertTexts.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		E371D95324D83F150075CCFD = {
+			isa = PBXGroup;
+			children = (
+				E349DD8D24DEB79300859714 /* Default-568h@2x.png */,
+				E371D95E24D83F150075CCFD /* PlandayCodeChallenge */,
+				E371D97524D83F210075CCFD /* PlandayCodeChallengeTests */,
+				E371D95D24D83F150075CCFD /* Products */,
+				0FDEA4A6DDD0CA9C32EBE835 /* Pods */,
+				3AC60210D27D245C04EAA88D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E371D95D24D83F150075CCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E371D95C24D83F150075CCFD /* PlandayCodeChallenge.app */,
+				E371D97224D83F210075CCFD /* PlandayCodeChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E371D95E24D83F150075CCFD /* PlandayCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7827424D95E250038D8C4 /* EmployeeListViewController.swift */,
+				E349DDD824E150A300859714 /* Alert */,
+				E371D95F24D83F150075CCFD /* AppDelegate.swift */,
+				E371D96124D83F150075CCFD /* SceneDelegate.swift */,
+				E371D96A24D83F200075CCFD /* LaunchScreen.storyboard */,
+				E349DD8A24DEA93D00859714 /* Resources */,
+				E349DD8924DE9D8300859714 /* View */,
+				E3D7829524DA9AAB0038D8C4 /* ViewModel */,
+				E3D7829424DA9A9B0038D8C4 /* Networking */,
+				E3D7829324DA9A720038D8C4 /* Model */,
+			);
+			path = PlandayCodeChallenge;
+			sourceTree = "<group>";
+		};
+		E371D97524D83F210075CCFD /* PlandayCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E371D97624D83F210075CCFD /* PlandayCodeChallengeTests.swift */,
+				E371D97824D83F210075CCFD /* Info.plist */,
+			);
+			path = PlandayCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		E3D7829324DA9A720038D8C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7828024D98F6A0038D8C4 /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3D7829424DA9A9B0038D8C4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7829024DA96C70038D8C4 /* PlandayAPIClient.swift */,
+				E3D7829824DAE96A0038D8C4 /* AccessToken.swift */,
+				E349DD8024DD3B7B00859714 /* ListEmployeesResponseBody.swift */,
+				E3BD363324DC7CED00A97E20 /* UpdateEmployeeRequestBody.swift */,
+				E349DD8224DD469B00859714 /* EmployeeDetailsResponseBody.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E3D7829524DA9AAB0038D8C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7828824D9FE4B0038D8C4 /* EmployeeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E371D95B24D83F150075CCFD /* PlandayCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E371D97B24D83F210075CCFD /* Build configuration list for PBXNativeTarget "PlandayCodeChallenge" */;
+			buildPhases = (
+				E61C26AB9C9B25E751C9F460 /* [CP] Check Pods Manifest.lock */,
+				E371D95824D83F150075CCFD /* Sources */,
+				E371D95924D83F150075CCFD /* Frameworks */,
+				E371D95A24D83F150075CCFD /* Resources */,
+				9D50FAD940FFA80E983D52DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlandayCodeChallenge;
+			productName = PlandayCodeChallenge;
+			productReference = E371D95C24D83F150075CCFD /* PlandayCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E371D97124D83F210075CCFD /* PlandayCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E371D97E24D83F210075CCFD /* Build configuration list for PBXNativeTarget "PlandayCodeChallengeTests" */;
+			buildPhases = (
+				2B0167573C5EDAD8FA2F0EB7 /* [CP] Check Pods Manifest.lock */,
+				E371D96E24D83F210075CCFD /* Sources */,
+				E371D96F24D83F210075CCFD /* Frameworks */,
+				E371D97024D83F210075CCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E371D97424D83F210075CCFD /* PBXTargetDependency */,
+			);
+			name = PlandayCodeChallengeTests;
+			productName = PlandayCodeChallengeTests;
+			productReference = E371D97224D83F210075CCFD /* PlandayCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E371D95424D83F150075CCFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Mathias Lolk Andreasen";
+				TargetAttributes = {
+					E371D95B24D83F150075CCFD = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E371D97124D83F210075CCFD = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E371D95B24D83F150075CCFD;
+					};
+				};
+			};
+			buildConfigurationList = E371D95724D83F150075CCFD /* Build configuration list for PBXProject "PlandayCodeChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E371D95324D83F150075CCFD;
+			productRefGroup = E371D95D24D83F150075CCFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E371D95B24D83F150075CCFD /* PlandayCodeChallenge */,
+				E371D97124D83F210075CCFD /* PlandayCodeChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E371D95A24D83F150075CCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E371D96C24D83F200075CCFD /* LaunchScreen.storyboard in Resources */,
+				E371D96924D83F200075CCFD /* Assets.xcassets in Resources */,
+				E349DD8E24DEB79300859714 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E371D97024D83F210075CCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B0167573C5EDAD8FA2F0EB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlandayCodeChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D50FAD940FFA80E983D52DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlandayCodeChallenge/Pods-PlandayCodeChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlandayCodeChallenge/Pods-PlandayCodeChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlandayCodeChallenge/Pods-PlandayCodeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E61C26AB9C9B25E751C9F460 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlandayCodeChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E371D95824D83F150075CCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D7827524D95E250038D8C4 /* EmployeeListViewController.swift in Sources */,
+				E3D7828124D98F6A0038D8C4 /* Employee.swift in Sources */,
+				E349DD8324DD469B00859714 /* EmployeeDetailsResponseBody.swift in Sources */,
+				E371D96024D83F150075CCFD /* AppDelegate.swift in Sources */,
+				E349DD9724E13F7300859714 /* Alert.swift in Sources */,
+				E349DD8124DD3B7B00859714 /* ListEmployeesResponseBody.swift in Sources */,
+				E3D7829924DAE96A0038D8C4 /* AccessToken.swift in Sources */,
+				E3BD363424DC7CED00A97E20 /* UpdateEmployeeRequestBody.swift in Sources */,
+				E3D7829124DA96C70038D8C4 /* PlandayAPIClient.swift in Sources */,
+				E371D96224D83F150075CCFD /* SceneDelegate.swift in Sources */,
+				E3D7828924D9FE4B0038D8C4 /* EmployeeViewModel.swift in Sources */,
+				E349DD9524E13EE500859714 /* AlertTexts.swift in Sources */,
+				E3D7827F24D98E630038D8C4 /* EmployeeCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E371D96E24D83F210075CCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E371D97724D83F210075CCFD /* PlandayCodeChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E371D97424D83F210075CCFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E371D95B24D83F150075CCFD /* PlandayCodeChallenge */;
+			targetProxy = E371D97324D83F210075CCFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E371D96A24D83F200075CCFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E371D96B24D83F200075CCFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E371D97924D83F210075CCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E371D97A24D83F210075CCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E371D97C24D83F210075CCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2AAA3B91663B45DF0D1C02 /* Pods-PlandayCodeChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47G2KUF2BW;
+				INFOPLIST_FILE = PlandayCodeChallenge/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lolk.PlandayCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E371D97D24D83F210075CCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7ADA34F6843630060C24FC3 /* Pods-PlandayCodeChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47G2KUF2BW;
+				INFOPLIST_FILE = PlandayCodeChallenge/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lolk.PlandayCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E371D97F24D83F210075CCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883401C885879AB81AA918A6 /* Pods-PlandayCodeChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47G2KUF2BW;
+				INFOPLIST_FILE = PlandayCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lolk.PlandayCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlandayCodeChallenge.app/PlandayCodeChallenge";
+			};
+			name = Debug;
+		};
+		E371D98024D83F210075CCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C34908AEA05EB69057A9AE /* Pods-PlandayCodeChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47G2KUF2BW;
+				INFOPLIST_FILE = PlandayCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lolk.PlandayCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlandayCodeChallenge.app/PlandayCodeChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E371D95724D83F150075CCFD /* Build configuration list for PBXProject "PlandayCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E371D97924D83F210075CCFD /* Debug */,
+				E371D97A24D83F210075CCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E371D97B24D83F210075CCFD /* Build configuration list for PBXNativeTarget "PlandayCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E371D97C24D83F210075CCFD /* Debug */,
+				E371D97D24D83F210075CCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E371D97E24D83F210075CCFD /* Build configuration list for PBXNativeTarget "PlandayCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E371D97F24D83F210075CCFD /* Debug */,
+				E371D98024D83F210075CCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E371D95424D83F150075CCFD /* Project object */;
+}
